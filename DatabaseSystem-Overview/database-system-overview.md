@@ -83,6 +83,22 @@ NoSQL databases are increasingly used in big data and real-time web applications
 
 ## Explain the classical non-relational data models.
 * Key-value (KV) - stores use the associative array (also known as a map or dictionary) as their fundamental data model. In this model, data is represented as a collection of key-value pairs, such that each possible key appears at most once in the collection.
+* Document store - While each document-oriented database implementation differs on the details of this definition, in general, they all assume that documents encapsulate and encode data (or information) in some standard formats or encodings.
+* Graph - This kind of database is designed for data whose relations are well represented as a graph (elements interconnected with an undetermined number of relations between them). The kind of data could be social relations, public transport links, road maps or network topologies, for example.
+
+## Give few examples of NoSQL databases and their pros and cons
+* *__Pros:__*
+  * It's Open Source - Open source products provide developers with some great benefits, notably their no-cost status. Other benefits: open-source software tends to be more reliable, secure, and faster to deploy than proprietary alternatives.
+  * Elastic Scaling - NoSQL replaces the old 'scale up' mantra of database managers with a new one: 'scale out.' Instead of adding bigger servers to handle more data load, a NoSQL database allows a company to distribute the load across multiple hosts as the load increases.
+  * Different NoSQL DBs for Different Projects - MongoDB and Redis are good choices for storing frequently-written, rarely read statistical data, such as a web hit counter. Hadoop, a freeform, distributed DB does a good job of storing Big Data such as weather stats or business analytics work. Memcache, a transient DB, excels at storing web sessions, locks, and short-term stats). Cassandra and Riak (automatically clustered, redundant stores) perform well in environments with high availability apps, when maximum uptime is vital.
+  * NoSQL’s Impressive Implementations - Companies such as Amazon, the BBC, Facebook and Google rely on NoSQL DBs.
+  * NoSQL Flies High in the Cloud - NoSQL and the cloud are a natural fit. Today’s servers are inexpensive and can easily be scaled up on demand using a service such as Amazon EC2. Like all cloud technology, EC2 is based on virtualization. The weak link of virtualization is I/O performance, with memory and CPU being the strong links. NoSQL databases mostly use memory over disk as the primary write location – thereby preventing inconsistent I/O performance. And since NoSQL datastores typically leverage horizontal scalability via partitioning, they are able to take advantage of the cloud’s elastic provisioning.
+* *__Cons:__* 
+  * Open Source can Mean Spotty Support for Enterprises
+  * Not Mature Enough for Enterprises
+  * Business Intelligence Limitations
+  * Lack of Expertise
+  * Compatibility Issues
 
 
 
