@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<catalogue>
+  <album>
+    <name>Help!</name>
+    <artist>Beatles</artist>
+    <year>1965</year>
+    <producer>George Martin</producer>
+    <price>30</price>
+    <songs>
+      <song>
+        <title>Help!</title>
+      </song>
+      <song>
+        <duration>2:33</duration>
+      </song>
+      <song>
+        <title>You've Got to Hide Your Love Away</title>
+        <duration>2:08</duration>
+      </song>
+    </songs>
+  </album>
+</catalogue>

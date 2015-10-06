@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<albums>
+  <album>
+    <name>Help!</name>
+    <author>Beatles</author>
+  </album>
+  <album>
+    <name>Insomniac</name>
+    <author>Enrique Iglesias</author>
+  </album>
+  <album>
+    <name>Escape</name>
+    <author>Enrique Iglesias</author>
+  </album>
+  <album>
+    <name>Stripped</name>
+    <author>Christina Aguilera</author>
+  </album>
+</albums>

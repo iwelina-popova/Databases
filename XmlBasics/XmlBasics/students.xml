@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="students.xslt"?>
+
+<!--
+What does the XML language represent? What is it used for?
+Create XML document students.xml, which contains structured description of students.
+For each student you should enter information for his name, sex, birth date, phone, email, course, specialty, faculty number
+and a list of taken exams (exam name, tutor, score).
+What do namespaces represent in an XML document? What are they used for?
+Explore http://en.wikipedia.org/wiki/Uniform_Resource_Identifier to learn more about URI, URN and URL definitions.
+Add default namespace for students "urn:students".
+Create XSD Schema for students.xml document.
+Add new elements in the schema: information for enrollment (date and exam score) and teacher's endorsements.
+Write an XSL stylesheet to visualize the students as HTML.
+Test it in your favourite browser.
+-->
+
+<students xmlns:students="urn:students">
+  <student>
+    <name>Ivan Ivanov</name>
+    <sex>male</sex>
+    <birthDate>1991-11-11</birthDate>
+    <phone>+359888656565</phone>
+    <email>ivan@ivanov.bg</email>
+    <course>3</course>
+    <specialty>Pilot</specialty>
+    <facultyNumber>123456</facultyNumber>
+    <exams>
+      <exam>
+        <examName>Avio</examName>
+        <tutor>Pesho Peshov</tutor>
+        <score>5</score>
+      </exam>
+      <exam>
+        <examName>Pilot</examName>
+        <tutor>Georgi Georgiev</tutor>
+        <score>4</score>
+      </exam>
+    </exams>
+  <enrollment>
+      <date>2015-05-10</date>
+      <examScore>280</examScore>
+    </enrollment>
+    <teacherEndorsements>
+      <teacher>
+        <teacherName>Nikolay</teacherName>
+        <endorsement>NN</endorsement>
+      </teacher>
+      <teacher>
+        <teacherName>Petar</teacherName>
+        <endorsement>PP</endorsement>
+      </teacher>
+    </teacherEndorsements>
+  </student>
+  <student>
+    <name>Stanka Stankova</name>
+    <sex>female</sex>
+    <birthDate>1988-01-12</birthDate>
+    <phone>+359887121212</phone>
+    <email>stanka.stankova@abv.bg</email>
+    <course>1</course>
+    <specialty>Math</specialty>
+    <facultyNumber>112233</facultyNumber>
+    <exams>
+      <exam>
+        <examName>Algebra</examName>
+        <tutor>Sonya Stefanova</tutor>
+        <score>5.8</score>
+      </exam>
+      <exam>
+        <examName>Geometry</examName>
+        <tutor>Todor Todorov</tutor>
+        <score>6</score>
+      </exam>
+    </exams>
+    <enrollment>
+      <date>2014-10-10</date>
+      <examScore>300</examScore>
+    </enrollment>
+    <teacherEndorsements>
+      <teacher>
+        <teacherName>Nikolay</teacherName>
+        <endorsement>NN</endorsement>
+      </teacher>
+      <teacher>
+        <teacherName>Petar</teacherName>
+        <endorsement>PP</endorsement>
+      </teacher>
+    </teacherEndorsements>
+  </student>
+</students>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dir path="../../../TraverseDirectoryToXml">
+  <dir path="../../../TraverseDirectoryToXml\bin">
+    <dir path="../../../TraverseDirectoryToXml\bin\Debug">
+      <file name="TraverseDirectoryToXml" />
+      <file name="TraverseDirectoryToXml.exe" />
+      <file name="TraverseDirectoryToXml" />
+      <file name="TraverseDirectoryToXml.vshost" />
+      <file name="TraverseDirectoryToXml.vshost.exe" />
+    </dir>
+    <dir path="../../../TraverseDirectoryToXml\bin\Release" />
+  </dir>
+  <dir path="../../../TraverseDirectoryToXml\obj">
+    <dir path="../../../TraverseDirectoryToXml\obj\Debug">
+      <dir path="../../../TraverseDirectoryToXml\obj\Debug\TempPE" />
+      <file name="DesignTimeResolveAssemblyReferencesInput" />
+      <file name="TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92" />
+      <file name="TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1" />
+      <file name="TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3" />
+      <file name="TraverseDirectoryToXml.csproj.FileListAbsolute" />
+      <file name="TraverseDirectoryToXml.csprojResolveAssemblyReference" />
+      <file name="TraverseDirectoryToXml" />
+      <file name="TraverseDirectoryToXml" />
+    </dir>
+  </dir>
+  <dir path="../../../TraverseDirectoryToXml\Properties">
+    <file name="AssemblyInfo" />
+  </dir>
+  <file name="App" />
+  <file name="DirectioryTraverserToXml" />
+  <file name="directory" />
+  <file name="TraverseDirectoryToXml" />
+</dir>

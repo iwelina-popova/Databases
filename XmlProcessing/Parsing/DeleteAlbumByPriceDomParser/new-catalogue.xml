@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="catalogue.xsl"?>
+<!--
+The catalogue should contain albums of different artists.
+For each album you should define: name, artist, year, producer, price and a list of songs.
+Each song should be described by title and duration.
+-->
+<catalogue>
+  <album>
+    <name>Escape</name>
+    <artist>Enrique Iglesias</artist>
+    <year>2001</year>
+    <producer>Morales</producer>
+    <price>18</price>
+    <songs>
+      <song>
+        <title>Escape</title>
+        <duration>3:28</duration>
+      </song>
+      <song>
+        <title>Hero</title>
+        <duration>4:24</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Stripped</name>
+    <artist>Christina Aguilera</artist>
+    <year>2002</year>
+    <producer>Storch</producer>
+    <price>20</price>
+    <songs>
+      <song>
+        <title>Fighter</title>
+        <duration>4:05</duration>
+      </song>
+      <song>
+        <title>Walk Away</title>
+        <duration>5:47</duration>
+      </song>
+      <song>
+        <title>Impossible</title>
+        <duration>4:14</duration>
+      </song>
+    </songs>
+  </album>
+</catalogue>
