@@ -79,7 +79,10 @@ rollback; //if any of Sql queries failed or error
 ## What is a NoSQL database?
 A NoSQL (originally referring to "non SQL" or "non relational") database provides a mechanism for storage and retrieval of data that is modeled in means other than the tabular relations used in relational databases. Such databases have existed since the late 1960s, but did not obtain the "NoSQL" moniker until a surge of popularity in the early twenty-first century, triggered by the needs of Web 2.0 companies such as Facebook, Google and Amazon.com.
 
-NoSQL databases are increasingly used in big data and real-time web applications.[7] NoSQL systems are also sometimes called "Not only SQL" to emphasize that they may support SQL-like query languages
+NoSQL databases are increasingly used in big data and real-time web applications. NoSQL systems are also sometimes called "Not only SQL" to emphasize that they may support SQL-like query languages
+
+## Explain the classical non-relational data models.
+* Key-value (KV) - stores use the associative array (also known as a map or dictionary) as their fundamental data model. In this model, data is represented as a collection of key-value pairs, such that each possible key appears at most once in the collection.
 
 
 
