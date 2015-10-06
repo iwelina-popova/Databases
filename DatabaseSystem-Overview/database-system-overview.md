@@ -64,8 +64,9 @@ SQL (Structured Query Language) is a special-purpose programming language design
 ## What are transactions used for?
 A transaction is a unit of work that is performed against a database. Transactions are units or sequences of work accomplished in a logical order, whether in a manual fashion by a user or automatically by some sort of a database program.
 * *__Example:__*
-* Request: transfer 900$ from Account 9001 to 9002
-```
+ ```
+Request: transfer 900$ from Account 9001 to 9002
+
 start transaction
 select balance from Account where Account_Number='9001';
 select balance from Account where Account_Number='9002';
@@ -74,6 +75,11 @@ update Account set balance=balance+900 here Account_Number='9002' ;
 commit; //if all sql queries succed
 rollback; //if any of Sql queries failed or error
 ```
+
+## What is a NoSQL database?
+A NoSQL (originally referring to "non SQL" or "non relational") database provides a mechanism for storage and retrieval of data that is modeled in means other than the tabular relations used in relational databases. Such databases have existed since the late 1960s, but did not obtain the "NoSQL" moniker until a surge of popularity in the early twenty-first century, triggered by the needs of Web 2.0 companies such as Facebook, Google and Amazon.com.
+
+NoSQL databases are increasingly used in big data and real-time web applications.[7] NoSQL systems are also sometimes called "Not only SQL" to emphasize that they may support SQL-like query languages
 
 
 
