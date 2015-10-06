@@ -39,9 +39,32 @@
 ## Explain the different kinds of relationships between tables in relational databases.
 
 ### There are three types of relationships:
-  * One-to-one: Both tables can have only one record on either side of the relationship. Each primary key value relates to       only one (or no) record in the related table. Most one-to-one relationships are forced by business rules and don't flow      naturally from the data. In the absence of such a rule, you can usually combine both tables into one table without           breaking any normalization rules.
-  * One-to-many: The primary key table contains only one record that relates to none, one, or many records in the related        table.
-  * Many-to-many: Each record in both tables can relate to any number of records (or no records) in the other table. For         instance. Many-to-many relationships require a third table, known as an associate or linking table, because relational       systems can't directly accommodate the relationship.
+  * One-to-one: Both tables can have only one record on either side of the relationship. Each primary key value relates to only one (or no) record in the related table. Most one-to-one relationships are forced by business rules and don't flow naturally from the data. In the absence of such a rule, you can usually combine both tables into one table without breaking any normalization rules.
+  * One-to-many: The primary key table contains only one record that relates to none, one, or many records in the related table.
+  * Many-to-many: Each record in both tables can relate to any number of records (or no records) in the other table. For instance. Many-to-many relationships require a third table, known as an associate or linking table, because relational systems can't directly accommodate the relationship.
+  
+## When is a certain database schema normalized?
+* Database normalization (or normalisation) is the process of organizing the columns (attributes) and tables (relations) of a relational database to minimize data redundancy
+* Normalization involves decomposing a table into less redundant (and smaller) tables without losing information
+
+## What are database integrity constraints and when are they used?
+
+Integrity constraints provide a mechanism for ensuring that data conforms to guidelines specified by the database administrator:
+* UNIQUE constraints to ensure that a given column is unique
+* NOT NULL constraints to ensure that no null values are allowed
+* PRIMARY KEY is a column of the table that uniquely identifies its rows (usually its is a number)
+* FOREIGN KEY constraints to ensure that two keys share a primary key to foreign key relationship
+
+## Point out the pros and cons of using indexes in a database.
+The indexing increases the disk space usage and reduces the performance of adding, deleting, and updating, but in most cases the benefit of indices for data retrieval greatly exceeds the disadvantages.
+* *__Pros:__*
+  * Fast searching
+  * Fast sorting
+* *__Cons:__*
+  * Slow insert
+  * Slow update
+
+
 
 
 
