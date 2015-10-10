@@ -131,6 +131,9 @@ ON e.ManagerID = m.EmployeeID
 --Task: Write a SQL query to find the names of all employees from the departments
 --"Sales" and "Finance" whose hire year is between 1995 and 2005.
 SELECT e.FirstName + ' ' + e.LastName AS [Employees name], e.HireDate, d.Name
-FROM Employees e, Departments d
-WHERE d.Name IN ('Sales', 'Finance') AND  
-	(e.HireDate BETWEEN '1995-01-01 00:00:00' AND '2005-12-31 00:00:00')
+FROM Employees e
+JOIN Departments d
+ON e.DepartmentID = d.DepartmentID
+WHERE d.Name IN ('Sales', 'Finance') AND
+	(e.HireDate BETWEEN '1995-01-01' AND '2005-12-31')
+ORDER BY e.FirstName, e.LastName
