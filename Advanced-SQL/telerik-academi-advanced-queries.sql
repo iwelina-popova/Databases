@@ -174,7 +174,7 @@ UPDATE Users
 	SET FullName = REPLACE(FullName, 'Some', 'None')
    
  --Task: Write SQL statements to delete some of the records from the Users and Groups tables.
-DELETE *
+DELETE
 FROM Users
 WHERE GroupId = 5
 
@@ -201,7 +201,7 @@ SET Pass = NULL
 WHERE DATEDIFF(day, LastLoginTime, '2010-03-10') > 0
    
  --Task: Write a SQL statement that deletes all users without passwords (NULL password).
-DELETE *
+DELETE
 FROM Users
 WHERE Pass IS NULL
    
@@ -283,7 +283,7 @@ ORDER BY [Managers count]
 	WHERE [Hours] < 15
 	
 	--Delete data
-	DELETE *
+	DELETE
 	FROM WorkHours
 	WHERE Id IN (2, 5)
 	
@@ -332,13 +332,13 @@ INSERT INTO WorkHoursLogs(WorkLogId, EmployeeId, OnDate, Task, [Hours], Comments
 GO
 
 -- TEST TRIGGERS
-DELETE * 
+DELETE
     FROM WorkHoursLogs
 
 INSERT INTO WorkHours(EmployeeId, OnDate, Task, [Hours])
     VALUES (25, GETDATE(), 'TASK: 25', 25)
 
-DELETE * 
+DELETE
     FROM WorkHours
     WHERE EmployeeId = 25
 
@@ -355,7 +355,7 @@ BEGIN TRAN
 		DROP CONSTRAINT FK_Department_Employees
 	GO
 
-	DELETE *
+	DELETE
 	FROM Employees e
 	JOIN Departments d
 		ON e.DepartmentID = d.DepartmentID
