@@ -104,7 +104,7 @@
             SqlDataReader reader = cmdImages.ExecuteReader();
             using (reader)
             {
-                string filePath = "../../images";
+                string filePath = "../../images/";
                 string fileExtention = ".jpg";
                 if (!Directory.Exists(filePath))
                 {
