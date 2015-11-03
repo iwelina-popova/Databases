@@ -1,13 +1,11 @@
-﻿using StudentsSystem.Importer.Importers;
-
-namespace StudentsSystem.ConsoleClient
+﻿namespace StudentsSystem.ConsoleClient
 {
     using System.Data.Entity;
-    using System.Linq;
 
     using StudentsSystem.Data;
     using StudentsSystem.Data.Migrations;
-
+    using StudentsSystem.Importer.Importers;
+    
     public class Startup
     {
         public static void Main()

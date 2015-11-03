@@ -5,12 +5,10 @@
 
     public class Student
     {
-        private ICollection<Homework> homeworks;
         private ICollection<Course> courses; 
 
         public Student()
         {
-            this.homeworks = new HashSet<Homework>();
             this.courses = new HashSet<Course>();
         }
         
@@ -23,12 +21,6 @@
         [Required]
         [MaxLength(10)]
         public string Number { get; set; }
-
-        public virtual ICollection<Homework> Homeworks
-        {
-            get { return this.homeworks; }
-            set { this.homeworks = value; }
-        }
 
         public virtual ICollection<Course> Courses
         {

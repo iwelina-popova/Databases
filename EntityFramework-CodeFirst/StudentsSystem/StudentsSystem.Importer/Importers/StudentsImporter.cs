@@ -1,4 +1,7 @@
-﻿namespace StudentsSystem.Importer.Importers
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace StudentsSystem.Importer.Importers
 {
     using System;
     using StudentsSystem.Data;
@@ -8,6 +11,9 @@
     {
         public void Seed(int count)
         {
+
+            Console.Write("Importing students:");
+
             var db = new StudentsSystemDbContext();
             for (int i = 0; i < count; i++)
             {
@@ -33,6 +39,7 @@
             }
 
             db.SaveChanges();
+            Console.WriteLine();
         }
     }
 }

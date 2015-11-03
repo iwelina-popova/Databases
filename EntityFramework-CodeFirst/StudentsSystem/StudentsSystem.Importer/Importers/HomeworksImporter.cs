@@ -9,19 +9,21 @@
     {
         public void Seed(int count)
         {
+            Console.Write("Importing homeworks:");
+
             var db = new StudentsSystemDbContext();
             var allStudentIds = db
                 .Students
-                .Select(st => st.Id)
+                .Select(s => s.Id)
                 .ToList();
-
             for (int i = 0; i < count; i++)
             {
+                var studentId = RandomGenerator.GetRandomNumber(0, allStudentIds.Count - 1);
                 var homework = new Homework
                 {
                     Content = RandomGenerator.GetRandomString(50, 150),
                     TimeSent = RandomGenerator.GetRandomDate(before: DateTime.Now),
-                    StudentId = allStudentIds[RandomGenerator.GetRandomNumber(0, allStudentIds.Count - 1)]
+                    StudentId = allStudentIds[studentId]
                 };
 
                 db.Homeworks.Add(homework);
@@ -40,6 +42,7 @@
             }
 
             db.SaveChanges();
+            Console.WriteLine();
         }
     }
 }
